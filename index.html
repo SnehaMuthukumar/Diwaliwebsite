@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diwali Festival</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .clm{
+                float: left;
+                width: 33.33%;
+                padding: 3px;
+            }
+            .clm img{
+                height: 300px;
+            }
+            #borderimg {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(border.png) 20% round;
+            }
+            #multibackground{
+                background-image: url(backgroundimg2.jpg), url(backgroundimg1.jpg);
+                background-repeat: no-repeat, repeat;
+                background-position: 95% 78%, top left;
+                background-size: 320px,100%;
+            }
+            p.wordwrap{
+                width: 40em; 
+                border: 1px solid #000000;
+                word-wrap: break-word;
+                font-size: 25px;
+            }
+            footer{
+                text-align: center;
+                padding: 3px;
+                background-color:blueviolet ;
+
+            }
+            .rotate{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: all 5s ease-in-out;  
+            }
+            .rotate:hover{
+                transform: rotate(360deg);
+            }
+            .rotate p{
+                font-size: 25px;
+                position: relative;
+                text-align: center;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .scale{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: all 3s ease-in-out;  
+            }
+            .scale:hover{
+                transform: scale(2,2);
+            }
+            .scale p{
+                font-size: 25px;
+                position: relative;
+                text-align: center;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .scaledec{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: all 3s ease-in-out;  
+            }
+            .scaledec:hover{
+                transform: scale(0.5,0.5);
+            }
+            .scaledec p{
+                font-size: 25px;
+                position: relative;
+                text-align: center;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .skew{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: all 3s ease-in-out;  
+            }
+            .skew:hover{
+                transform: skew(30deg, 30deg);
+            }
+            .skew p{
+                font-size: 25px;
+                position: relative;
+                text-align: center;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .rotate3d{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: all 5s ease-in-out;  
+            }
+            .rotate3d:hover{
+                transform: rotate3d(25,25,25,360deg);
+            }
+            .rotate3d p{
+                font-size: 25px;
+                position: relative;
+                text-align: center;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .scale3d{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: all 3s ease-in-out;  
+            }
+            .scale3d:hover{
+                transform: scale3d(2,2,2);
+            }
+            .scale3d p{
+                font-size: 25px;
+                position: relative;
+                text-align: center;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+        </style>
+    </head>
+    <body id="multibackground">
+        <div >
+            <center><h1 style="font-size: 40px;">Diwali Festival</h1></center>
+            <p style="font-size: 25px;"id="borderimg">Diwali or Deepavali is a festival of lights and one of the major festivals celebrated by Hindus, Jains, Sikhs and some Buddhists, notably Newar Buddhists. The festival usually lasts five days and is celebrated during the Hindu lunisolar month Kartika (between mid-October and mid-November).One of the most popular festivals of Hinduism, Diwali symbolizes the spiritual "victory of light over darkness, good over evil, and knowledge over ignorance".The festival is widely associated with Lakshmi, goddess of prosperity, with many other regional traditions connecting the holiday to Sita and Rama, Vishnu, Krishna, Yama, Yami, Durga, Kali, Hanuman, Ganesha, Kubera, Dhanvantari, or Vishvakarman. Furthermore, it is, in some regions, a celebration of the day Lord Rama returned to his kingdom Ayodhya with his wife Sita and his brother Lakshmana after defeating Ravana in Lanka and serving 14 years of exile.</p>
+            <p class="wordwrap">In the lead-up to Diwali, celebrants will prepare by cleaning, renovating, and decorating their homes and workplaces with diyas (oil lamps) and rangolis (colorful art circle patterns). During Diwali, people wear their finest clothes, illuminate the interior and exterior of their homes with diyas and rangoli, perform worship ceremonies of Lakshmi, the goddess of prosperity and wealth, light fireworks, and partake in family feasts, where mithai (sweets) and gifts are shared. Diwali is also a major cultural event for the Hindu, Sikh and Jain diaspora</p>
+        </div>
+        <div>
+            <center>
+                <h3 style="font-size: 30px;">Diwali Wishes using Transform property</h3>
+                <h3 style="font-size: 25px;">Rotate</h3>
+            <div class="rotate"><p>Happy Diwali</p></div>
+            <br><br>
+            <h3 style="font-size: 25px;">Scale-Increase</h3>
+            <div class="scale"><p>Happy Diwali</p></div>
+            <br><br>
+            <h3 style="font-size: 25px;">Scale-Decrease</h3>
+            <div class="scaledec"><p>Happy Diwali</p></div>
+            <br><br>
+            <h3 style="font-size: 25px;">Skew</h3>
+            <div class="skew"><p>Happy Diwali</p></div>
+            <br><br>
+            <h3 style="font-size: 25px;">Rotate 3D</h3>
+            <div class="rotate3d"><p>Happy Diwali</p></div>
+            <br><br>
+            <h3 style="font-size: 25px;">Scale 3D</h3>
+            <div class="scale3d"><p>Happy Diwali</p></div>
+            <br><br>
+            
+        </center>
+        </div>
+        <div class="gallery">
+            <div class="row">
+                <div class="clm">
+                    <img src="img4.jpg" alt="Image1" style="width: 100%;">
+                </div>
+                <div class="clm">
+                    <img src="img5.jpg" alt="Image2" style="width: 100%;">
+                </div>
+                <div class="clm">
+                    <img src="img6.jpg" alt="Image3" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <footer>
+            <p style="font-size: 25px;">
+                Done by Sneha M<br>
+                I am a third year undergraduate IT student currently enrolled in Sri Venkateswara College of Engineering<br>
+                <a href="mailto:snehamuthukumar3@gmail.com">Contact Me</a>
+            </p>
+        </footer>
+    </body>
+</html>
